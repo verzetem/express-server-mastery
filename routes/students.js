@@ -28,22 +28,24 @@ router.post('/', (req, res, next) => {
 router.put('/:id', (req, res) => {
     const id = req.params.id;
     const body = req.body;
-
     const updatedStudents = students.map((student) => {
         if (student.id == id) {
             return body;
         }
         return student;
     });
+    students = updatedStudents;
     res.json({ students: updatedStudents });
 });
 
 router.delete('/:id', (req, res) => {
     const id = req.params.id;
+    const body = req.body;
     const trash = students.filter((student) => {
-        return student.id != id;
+        return student.id != id[0];
     });
-    res.json({ students: trash });
+    students = trash;
+    res.json({ students: body });
 });
 
 module.exports = router;
