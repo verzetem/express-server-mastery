@@ -1,7 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
-let deltron = 3030;
+let deltron = process.env.PORT || 3030;
 const cors = require('cors');
 
 const cakeRoutes = require('./routes/cakes');
