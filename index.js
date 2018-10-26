@@ -5,6 +5,7 @@ let deltron = 3030;
 const cors = require('cors');
 
 const cakeRoutes = require('./routes/cakes');
+const studentRoutes = require('./routes/students');
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -13,6 +14,7 @@ app.use(cors());
 app.get('/', (req, res) => res.send('🐧🐧🐧🐧🐧🐧🐧'));
 
 app.use('/cakes', cakeRoutes);
+app.use('/students', studentRoutes);
 
 app.use(notFound);
 // General purpose 'catch' all errors
