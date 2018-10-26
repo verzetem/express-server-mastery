@@ -9,7 +9,6 @@ router.get('/', (req, res) => {
 
 router.get('/:id', (req, res, next) => {
     const id = req.params.id;
-    console.log(id);
 
     const cake = cakes.filter((cake) => {
         return cake.id == id;
@@ -22,18 +21,15 @@ router.get('/:id', (req, res, next) => {
 
 router.post('/', (req, res, next) => {
     const body = req.body;
-    console.log(bopdy);
+    const news = req;
     cakes.push(body);
+    cakes.push(news);
     res.json({ cakes: cakes });
 });
 
 router.put('/:id', (req, res) => {
     const id = req.params.id;
     const body = req.body;
-
-    console.log(id);
-    console.log(body);
-
     const updatedCakes = cakes.map((cake) => {
         if (cake.id == id) {
             return body;
