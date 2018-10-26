@@ -28,13 +28,15 @@ router.post('/', (req, res, next) => {
 router.put('/:id', (req, res) => {
     const id = req.params.id;
     const body = req.body;
+    cakes[id-1] = body
     const updatedCakes = cakes.map((cake) => {
         if (cake.id == id) {
             return body;
         }
         return cake;
+        
     });
-    res.json({ cakes: updatedCakes });
+    res.json({ cakes: body });
 });
 
 router.delete('/:id', (req, res) => {
