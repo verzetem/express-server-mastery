@@ -21,10 +21,8 @@ router.get('/:id', (req, res, next) => {
 
 router.post('/', (req, res, next) => {
     const body = req.body;
-    const news = req;
     cakes.push(body);
-    cakes.push(news);
-    res.json({ cakes: cakes });
+    res.json({ cakes: body });
 });
 
 router.put('/:id', (req, res) => {

@@ -22,7 +22,7 @@ router.get('/:id', (req, res, next) => {
 router.post('/', (req, res, next) => {
     const body = req.body;
     students.push(body);
-    res.json({ students: students });
+    res.json({ students: body });
 });
 
 router.put('/:id', (req, res) => {
