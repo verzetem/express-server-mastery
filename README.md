@@ -4,9 +4,9 @@ Today you will be working together with someone else in your cohort to produce a
 
 ## Requirements
 
-* Working Express Server
+* **Working Express Server**
 
-* GET all routes for both resources that returns json with a root key that identifies the resource, ex.
+* **GET all routes for both resources that returns json with a root key that identifies the resource, ex.**
 
 ```json
 { 
@@ -42,7 +42,7 @@ And
 }
 ```
 
-* GET one routes that use the request ID parameter to return one resource with a root key that identifies the resource, ex.
+* **GET one routes that use the request ID parameter to return one resource with a root key that identifies the resource, ex.**
 
 ```json
 {
@@ -69,41 +69,43 @@ And
 }
 ```
 
-* POST routes for both resources that use the request body to add a new resource to the collection, and return the newly POSTED resource.
+* **POST routes for both resources that use the request body to add a new resource to the collection, and return the newly POSTED resource.**
 
-* PUT routes for both resources that use the request ID parameter and the request body to find one resource in the collection, update it, and return the UPDATED resource.
+* **PUT routes for both resources that use the request ID parameter and the request body to find one resource in the collection, update it, and return the UPDATED resource.**
 
-* DELETE routes for both resources that use the request ID to find one resource in the collection, delete it, and return the DELETED resource.
+* **DELETE routes for both resources that use the request ID to find one resource in the collection, delete it, and return the DELETED resource.**
 
-* All of your routes should be modular
+* **All of your routes should be modular**
   - Use a routes folder
   - Separate route files for each collection of resources
   - Use express.Router() & module.exports
 
-* Your server should have proper error handling
+* **Your server should have proper error handling**
   - 404 'not found' error handler
   - General purpose error handler
 
-* Your server should be deployed
+* **Your server should be deployed**
   - Test and develop your server locally
   - Deploy once you have some features working
 
-* Your server should include CORS middleware to allow cross origin requests
+* **Your server should include CORS middleware to allow cross origin requests**
 
-* Use proper github workflow
+* **Use proper github workflow**
   - Commit early
   - Commit often
   - Each person in your pair should have commits on the repo
 
 ## Notes
 
-* Remember your pair programming principles
+* **Remember your pair programming principles**
   - Be repectful
   - Be patient
   - Be kind
   - Switch driver/navigator roles regularly (every 20 mins or so)
 
-* If you run into issues, help each other gain understanding
+* **If you run into issues, help each other gain understanding**
   - And take note of what 'tripped you up'
 
-* I encourage you to make a cheat sheet/cheat sheets as you go along so you have a reference document for the future
+* **I encourage you to make a cheat sheet/cheat sheets as you go along so you have a reference document for the future**
+
+## HAVE FUN!!!
